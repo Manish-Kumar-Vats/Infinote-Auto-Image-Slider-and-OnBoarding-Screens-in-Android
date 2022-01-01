@@ -3,7 +3,7 @@ package com.codewithgolap.imageslider;
 public class SliderItems {
 
     //set to String, if you want to add image url from internet
-    private int image;
+    private final int image;
 
     SliderItems(int image) {
         this.image = image;

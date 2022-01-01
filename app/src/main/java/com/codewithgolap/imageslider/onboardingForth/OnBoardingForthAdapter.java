@@ -16,27 +16,27 @@ import com.codewithgolap.imageslider.R;
 public class OnBoardingForthAdapter extends PagerAdapter {
 
 
-    private Context context;
+    private final Context context;
 
     public OnBoardingForthAdapter(Context context) {
         this.context = context;
     }
 
-    private int[] slider_images = {
+    private final int[] slider_images = {
             R.drawable.fa2,
             R.drawable.fa6,
             R.drawable.fa7,
             R.drawable.fa5
     };
 
-    private String[] slider_title = {
+    private final String[] slider_title = {
             "Food in your area",
             "Food which is Health",
             "Food you love",
             "Food that matter"
     };
 
-    private String[] slider_desc = {
+    private final String[] slider_desc = {
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",

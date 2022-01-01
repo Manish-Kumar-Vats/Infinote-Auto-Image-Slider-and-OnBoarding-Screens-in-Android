@@ -3,7 +3,6 @@ package com.codewithgolap.imageslider.onboardingThird;
 import android.view.View;
 
 import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager2.widget.ViewPager2;
 
 import com.codewithgolap.imageslider.R;
 

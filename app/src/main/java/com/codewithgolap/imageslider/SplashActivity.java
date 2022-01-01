@@ -1,14 +1,11 @@
 package com.codewithgolap.imageslider;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import com.codewithgolap.imageslider.onboardingForth.OnBoardingForthActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -20,11 +17,6 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         TextView tv_next = findViewById(R.id.tv_next);
-        tv_next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(SplashActivity.this, OnBoardingForthActivity.class));
-            }
-        });
+        tv_next.setOnClickListener(view -> startActivity(new Intent(SplashActivity.this, MainActivity.class)));
     }
 }

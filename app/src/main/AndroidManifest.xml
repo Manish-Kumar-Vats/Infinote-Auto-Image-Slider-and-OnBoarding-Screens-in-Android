@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.FOUR"/>
         <activity android:name=".SelectActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,45 +19,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".SplashActivity"
-            android:theme="@style/AppTheme.FOUR">
+        <activity android:name=".HomeActivity" />
+        <!--    for image slider-->
+        <activity android:name=".MainActivity" />
 
-        </activity>
+        <!--    for onboard tutorial-->
+        <activity android:name=".onboadingOne.OnBoardingDesignOne" />
+        <activity
+            android:name=".onboardingSecond.OnBoardingTwoActivity"
+            android:theme="@style/AppTheme.TWO" />
+        <activity android:name=".onboardingThird.OnBoardingActivityThree" />
         <activity
             android:name=".onboardingForth.OnBoardingForthActivity"
             android:theme="@style/AppTheme.FOUR" />
-        <activity android:name=".onboardingThird.OnBoardingActivityThree">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
-        <activity
-            android:name=".onboardingSecond.OnBoardingTwoActivity"
-            android:theme="@style/AppTheme.TWO">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".onboadingOne.OnBoardingDesignOne">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

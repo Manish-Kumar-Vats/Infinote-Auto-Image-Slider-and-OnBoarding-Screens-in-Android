@@ -12,8 +12,6 @@ import com.codewithgolap.imageslider.R;
 
 public class OnBoardingForthActivity extends AppCompatActivity {
 
-    private ViewPager viewPager;
-    private OnBoardingForthAdapter adapter;
     private LinearLayout layout_dots;
     private TextView[] tv_dots;
 
@@ -22,10 +20,10 @@ public class OnBoardingForthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_on_boarding_forth);
 
-        viewPager = findViewById(R.id.forth_view_pager);
+        ViewPager viewPager = findViewById(R.id.forth_view_pager);
         layout_dots = findViewById(R.id.layout_dots);
 
-        adapter = new OnBoardingForthAdapter(OnBoardingForthActivity.this);
+        OnBoardingForthAdapter adapter = new OnBoardingForthAdapter(OnBoardingForthActivity.this);
         viewPager.setAdapter(adapter);
 
         addDots(0);
